@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="img99.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        /* navbar */
+        .navi {
+            position: relative;
+            color: #a0a0a0;
+        }
+
+        .navi:after {
+            content: "";
+            position: absolute;
+            background-color: #878787dc;
+            height: 3px;
+            border-radius: 4px;
+            width: 0;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+
+        .navi:hover:after {
+            width: 100%;
+        }
+
+
+        .subheading {
+            color: orange;
+            border-left: 6px solid #20c997;
+            border-radius: 7px;
+            background-image: linear-gradient(to left, #ff000000, #b1b1b146);
+            padding-bottom: 5px;
+
+        }
+
+        .paragraph {
+            color: #4c92ae;
+            text-indent: 50px;
+            text-align: justify;
+        }
+
+        .imgs {
+            border-radius: 20px;
+            height: 170px;
+
+        }
+
+        .heading {
+            background-image: url(img44.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 180px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class=" sticky-lg-top" style="background-color: rgba(244, 244, 244, 0.848) ;" id="nav">
+        <div class="flex-fill">
+            <div class="navbar nav ">
+                <h1 class="h3 text-center ps-3" style=" color: #20c997;">
+                    <i class="fas fa-seedling"></i>
+                    <span class="d-lg-inline d-none">GROUP 3</span>
+                </h1>
+
+                <div>
+                    <ul class="nav px-1">
+
+
+                        <!-- HOME -->
+                        <li class=" px-4">
+                            <span class="navi ">
+                                <a href="main_page.html" class="h5 " style="text-decoration: none; color: #20c997;">
+                                    <i class="fa-solid fa-house-chimney d-inline d-lg-none"></i>
+                                    <span class="d-none d-lg-inline">HOME</span>
+                                </a>
+                            </span>
+                        </li>
+
+
+                        <!-- ABOUT -->
+                        <li class="px-4 ">
+                            <span class="navi">
+                                <a href="aboutus.html" class="h5 " style="text-decoration: none; color: #20c997;">
+                                    <i class="fa-solid fa-users d-inline d-lg-none"></i>
+                                    <span class="d-none d-lg-inline">ABOUT</span>
+                                </a>
+                            </span>
+                        </li>
+
+
+                        <!-- CONTACT -->
+                        <li class="px-4 ">
+                            <span class="navi">
+                                <a href="contact.html" class="h5 " style="text-decoration: none; color: #20c997;">
+                                    <i class="fa-solid fa-message d-inline d-lg-none"></i>
+                                    <span class="d-none d-lg-inline">CONTACT</span>
+                                </a>
+                            </span>
+                        </li>
+
+
+                        <!-- LINKS -->
+                        <li class="px-4 dropdown ">
+                            <span class="navi">
+
+                                <a href="#" class="h5 " style="text-decoration: none; color: #4097ba;"
+                                    data-bs-toggle="dropdown">
+                                    <i class="fa-regular fa-square-caret-down d-inline d-lg-none"></i>
+                                    <span class="d-none d-lg-inline">LINKS</span>
+                                </a>
+
+                                <!-- dropdown -->
+                                <ul class="dropdown-menu">
+
+                                    <!-- causes -->
+                                    <li>
+                                        <a href="causes.html" class="dropdown-item">Causes</a>
+                                    </li>
+
+                                    <!-- effects -->
+                                    <li>
+                                        <a href="effects.html" class="dropdown-item">Effects</a>
+                                    </li>
+
+                                    <!-- actions -->
+                                    <li>
+                                        <a href="action.html" class="dropdown-item"
+                                            style="background-color: #4097ba; color: white;">Actions</a>
+                                    </li>
+                                </ul>
+
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+
+        <!-- heading -->
+        <div class="row heading text-center mb-5">
+            <div class="col col-lg mx-4 mt-4">
+                <span class="h1 mainheading"
+                    style="font-size: 90px; font-weight: bolder; color: greenyellow; text-shadow: 3px 3px 10px #000000;">ACTION</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <span class="col col-lg-6 h4 ms-lg-5 text-center headline1 text-lg-start text-center "
+                style="text-indent: 80px; color: #4c92ae; margin-top: 110px;">Everyone can help limit climate change.
+                From the way we travel, to the electricity we use and the food we eat, we can make a difference. Start
+                with these ten actions to help tackle the climate crisis.</span>
+            <object data="Asset 10.svg" type=""
+                class="col col-lg-5 ms-5 mt-3 headline2 text-center text-lg-center"></object>
+        </div>
+
+        <div class="container" style="margin-left: auto; margin-right: auto;">
+
+            <!-- first-row -->
+            <div class="mx-3 mt-5 row rows1">
+                <span class="h4 col-3 mx-3 mb-4 subheading">Save energy at home</span>
+                <div class="row">
+                    <span class="col-12 col-lg-3 text-center">
+                        <img src="img3.1.jpg" alt="" width="300px" class="imgs" style="height: 170px;">
+                    </span>
+                    <div class="h5 paragraph col-12 col-lg mt-4 ms-lg-5">
+                        Much of our electricity and heat is powered by coal, oil
+                        and gas. Use less energy by lowering your heating and cooling, switching to LED light bulbs and
+                        energy-efficient electric appliances, washing your laundry with cold water or hanging things to
+                        dry
+                        instead of using a dryer.
+                    </div>
+                </div>
+                <hr class="mt-4">
+            </div>
+
+            <!-- second-row -->
+            <div class="mx-3 row rows1">
+                <span class="h4 col-4 mx-3 mb-4 subheading ">Walk, cycle or take public transport</span>
+                <div class="row">
+                    <span class="col-12 col-lg-3 text-center">
+                        <img src="img3.2.jpg" alt="" width="300px" class="imgs" >
+                    </span>
+                    <div class="h5 paragraph col-12 col-lg mt-4 ms-lg-5">The world's roads are clogged with vehicles,
+                        most of them
+                        burning diesel or petrol. Walking or riding a bike instead of driving will reduce greenhouse gas
+                        emissions - and help your health and fitness. For longer distances, consider taking a train or
+                        bus.
+                        And carpool whenever possible.
+                    </div>
+                </div>
+                <hr class="mt-4">
+            </div>
+
+            <!-- third-row -->
+            <div class="mx-3 row rows1">
+                <span class="h4 col-3 mx-3 mb-4 subheading">Eat more vegetables</span>
+                <div class="row">
+                    <span class="col-12 col-lg-3 text-center">
+                        <img src="img3.3.jpg" alt="" width="300px" class="imgs">
+                    </span>
+                    <div class="h5 paragraph col-12 col-lg mt-4 ms-lg-5">
+                        Eating more vegetables, fruits, whole grains, legumes,
+                        nuts and seeds, and less meat and dairy, can significantly lower your environmental impact.
+                        Producing plant-based foods generally results in fewer greenhouse gas emissions and requires
+                        less
+                        energy, land and water.
+                    </div>
+                </div>
+                <hr class="mt-4">
+            </div>
+
+            <!-- fourth-row -->
+            <div class="mx-3 row rows1">
+                <span class="h4 col-3 mx-3 mb-4 subheading">Consider your travel</span>
+                <div class="row">
+                    <span class="col-12 col-lg-3 text-center">
+                        <img src="img3.4.jpeg" alt="" width="300px" class="imgs">
+                    </span>
+                    <div class="h5 paragraph col-12 col-lg mt-4 ms-lg-5">
+                        Aeroplanes burn large amounts of fossil fuels, producing
+                        significant greenhouse gas emissions. That makes taking fewer flights one of the fastest ways to
+                        reduce your environmental impact. When you can, meet virtually, take a train or skip that
+                        long-distance trip altogether.
+                    </div>
+                </div>
+                <hr class="mt-4">
+            </div>
+
+            <!-- fifth-row -->
+            <div class="mx-3 row rows1">
+                <span class="h4 col-3 mx-3 mb-4 subheading">Throw away less food</span>
+                <div class="row">
+                    <span class="col-12 col-lg-3 text-center">
+                        <img src="img3.5.jpg" alt="" width="300px" class="imgs">
+                    </span>
+                    <div class="h5 paragraph col-12 col-lg mt-4 ms-lg-5">
+                        When you throw food away, you're also wasting the
+                        resources and energy that were used to grow, produce, package and transport it. And when food
+                        rots
+                        in a landfill, it produces methane, a powerful greenhouse gas. So use what you buy and compost
+                        any
+                        leftovers.
+                    </div>
+                </div>
+                <hr class="mt-4">
+            </div>
+
+            <!-- sixth-row -->
+            <div class="mx-3 row rows1">
+                <span class="h4 col-4 mx-3 mb-4 subheading">Reduce, reuse, repair & recycle</span>
+                <div class="row">
+                    <span class="col-12 col-lg-3 text-center">
+                        <img src="img3.6.jpg" alt="" width="300px" class="imgs">
+                    </span>
+                    <div class="h5 paragraph col-12 col-lg mt-4 ms-lg-5">
+                        Electronics, clothes and other items we buy cause carbon emissions at each point in production,
+                        from
+                        the extraction of raw materials to manufacturing and transporting goods to market. To protect
+                        our
+                        climate, buy fewer things, shop second-hand, repair what you can and recycle.
+                    </div>
+                </div>
+                <hr class="mt-4">
+            </div>
+
+            <!-- seventh-row -->
+            <div class="mx-3 row rows1">
+                <span class="h4 col-12 col-lg-5 mx-3 mb-4 subheading">Change your home's source of energy</span>
+                <div class="row">
+                    <span class="col-3 text-center">
+                        <img src="img3.7.jpg" alt="" width="300px" class="imgs">
+                    </span>
+                    <div class="h5 paragraph col-12 col-lg  mt-4 ms-lg-5">
+                        Ask your utility company if your home energy comes from oil, coal or gas. If possible, see if
+                        you
+                        can switch to renewable sources such as wind or solar. Or install solar panels on your roof to
+                        generate energy for your home.
+                    </div>
+                </div>
+                <hr class="mt-4">
+            </div>
+
+            <!-- eighth-row -->
+            <div class="mx-3 row rows1">
+                <span class="h4 col-12 col-lg-5 mx-3 mb-4 subheading">Switch to an electric vehicle</span>
+                <div class="row">
+                    <span class="col-3 text-center">
+                        <img src="img3.8.jpg" alt="" width="300px" class="imgs">
+                    </span>
+                    <div class="h5 paragraph col-12 col-lg  mt-4 ms-lg-5">
+                        If you plan to buy a car, consider going electric, with more and cheaper models coming on the
+                        market. Even if they still run on electricity produced from fossil fuels, electric cars help
+                        reduce
+                        air pollution and cause significantly fewer greenhouse gas emissions than petrol or
+                        diesel-powered
+                        vehicles.
+                    </div>
+                </div>
+                <hr class="mt-4">
+            </div>
+
+
+        </div>
+
+        <div class=" container">
+            <div class="alert alert-success rounded-3 ">Credit to United Nations</div>
+            <div class="d-lg-none d-inline ">
+                <a href="#nav" class=>
+                    <button class="btn btn-success col-12 my-4">Go To Top</button>
+                </a> 
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer class="mt-3 d-lg-inline d-none">
+
+            <div class="" style="height: 200px; background-color: rgba(168, 168, 168, 0.3);">
+                <div class="row">
+
+
+                    <span class="col-4 h5 text-dark my-4 text-center">
+                        Explore
+                        <span class="list mt-3">
+                            <a href="main_page.html" style="text-decoration: none;">
+                                <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Home</div>
+                            </a>
+                            <a href="contact.html" style="text-decoration: none;">
+                                <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Contact</div>
+                            </a>
+                            <a href="aboutus.html" style="text-decoration: none;">
+                                <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">About</div>
+                            </a>
+                        </span>
+                    </span>
+
+                    <span class="col-4 h5 text-dark mt-4 text-center">
+                        <i class="fas fa-seedling"></i>
+                        Group 3
+                        <span class="list ">
+                            <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Sint Sint Linn Lae
+                            </div>
+                            <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Kyal Sin Lin Lint
+                                Aung
+                            </div>
+                            <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Hkaw Seng Grin
+                            </div>
+                            <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Min Kaung Htet
+                            </div>
+                        </span>
+
+                    </span>
+
+                    <span class="col-4 h5 text-dark my-4 text-center">
+                        Follow Us
+                        <span>
+                            <div class="list mt-2">
+                                <a href="https://www.youtube.com/" style="text-decoration: none;">
+                                    <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px"><i
+                                            class="fa-brands fa-youtube"></i> Youtube</div>
+                                </a>
+                                <a href="https://www.facebook.com/" style="text-decoration: none;">
+                                    <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px"><i
+                                            class="fa-brands fa-facebook"></i> Facebook</div>
+                                </a>
+                                <a href="https://www.instagram.com/" style="text-decoration: none;">
+                                    <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px"><i
+                                            class="fa-brands fa-instagram"></i> Instagram</div>
+                                </a>
+                                <a href="https://discord.com/" style="text-decoration: none;">
+                                    <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px"><i
+                                            class="fa-brands fa-discord"></i> Discord</div>
+                                </a>
+
+                            </div>
+
+                        </span>
+                    </span>
+
+
+                </div>
+                <div class="row h5 text-black-50">
+                    <span class="row-12 text-center mb-1 " style="font-size: 17px;">&copy;2022, All Right Reserve</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: '70px',
+            duration: 1400,
+            delay: 500
+
+        })
+        ScrollReveal().reveal('.mainheading', {
+            distance: '10px',
+            opacity: 0
+        });
+        ScrollReveal().reveal('.headline1', { delay: 100, origin: 'left' });
+        ScrollReveal().reveal('.headline2', { delay: 100, origin: 'right' });
+        ScrollReveal().reveal('.subheading', { delay: 900, origin: 'left' });
+        ScrollReveal().reveal('.rows1', { delay: 500, origin: 'bottom', });
+
+    </script>
+</body>
+
+</html>

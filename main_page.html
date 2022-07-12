@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="icon" href="img99.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<style>
+    ::-webkit-scrollbar {
+        width: 0px;
+        scroll-behavior: smooth;
+    }
+
+
+
+    /* navbar */
+    .navi {
+        position: relative;
+        color: #a0a0a0;
+    }
+
+    .navi:after {
+        content: "";
+        position: absolute;
+        background-color: #878787dc;
+        height: 3px;
+        border-radius: 4px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+
+    .navi:hover:after {
+        width: 100%;
+    }
+
+    /* see more btn */
+    #seemore {
+        height: 45px;
+        width: 170px;
+        transition: 0.1s;
+    }
+
+    #seemore:hover {
+        height: 50px;
+        width: 180px;
+
+    }
+
+    /* fade in */
+    .svg {
+        animation: svg 1s;
+
+    }
+
+    @keyframes svg {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    /* 3 card */
+    .contentcard {
+        transition: 0.5s;
+    }
+
+    .contentcard:hover {
+        transform: translateY(-20px);
+    }
+
+    /* progressbar */
+    .pg {
+        transition: 0.4s;
+    }
+
+    .pg:hover {
+        -ms-transform: scale(1.07);
+        /* IE 9 */
+        -webkit-transform: scale(1.07);
+        /* Safari 3-8 */
+        transform: scale(1.07);
+    }
+</style>
+
+<body>
+    <!-- nav bar -->
+    <nav class=" sticky-lg-top" style="background-color: rgba(244, 244, 244, 0.848)    ;" id="nav">
+        <div class="flex-fill">
+            <div class="navbar nav ">
+                <h1 class="h3 text-center ps-3" style=" color: #20c997;">
+                    <i class="fas fa-seedling"></i>
+                    <span class="d-lg-inline d-none">GROUP 3</span>
+                </h1>
+
+                <div>
+                    <ul class="nav px-1">
+
+
+                        <!-- HOME -->
+                        <li class=" px-4">
+                            <span class="navi ">
+                                <a href="main_page.html" class="h5 " style="text-decoration: none; color: #4097ba;">
+                                    <i class="fa-solid fa-house-chimney d-inline d-lg-none"></i>
+                                    <span class="d-none d-lg-inline">HOME</span>
+                                </a>
+                            </span>
+                        </li>
+
+
+                        <!-- ABOUT -->
+                        <li class="px-4 ">
+                            <span class="navi">
+                                <a href="aboutus.html" class="h5 " style="text-decoration: none; color: #20c997;">
+                                    <i class="fa-solid fa-users d-inline d-lg-none"></i>
+                                    <span class="d-none d-lg-inline">ABOUT</span>
+                                </a>
+                            </span>
+                        </li>
+
+
+                        <!-- CONTACT -->
+                        <li class="px-4 ">
+                            <span class="navi">
+                                <a href="contact.html" class="h5 " style="text-decoration: none; color: #20c997;">
+                                    <i class="fa-solid fa-message d-inline d-lg-none"></i>
+                                    <span class="d-none d-lg-inline">CONTACT</span>
+                                </a>
+                            </span>
+                        </li>
+
+
+                        <!-- LINKS -->
+                        <li class="px-4 dropdown ">
+                            <span class="navi">
+
+                                <a href="#" class="h5 " style="text-decoration: none; color: #20c997;"
+                                    data-bs-toggle="dropdown">
+                                    <i class="fa-regular fa-square-caret-down d-inline d-lg-none"></i>
+                                    <span class="d-none d-lg-inline">LINKS</span>
+                                </a>
+
+                                <!-- dropdown -->
+                                <ul class="dropdown-menu">
+
+                                    <!-- causes -->
+                                    <li>
+                                        <a href="causes.html" class="dropdown-item">Causes</a>
+                                    </li>
+
+                                    <!-- effects -->
+                                    <li>
+                                        <a href="effects.html" class="dropdown-item">Effects</a>
+                                    </li>
+
+                                    <!-- actions -->
+                                    <li>
+                                        <a href="action.html" class="dropdown-item">Actions</a>
+                                    </li>
+                                </ul>
+
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- first container -->
+    <div style="background-color: rgba(255, 255, 255, 0.773);" class="container-fluid">
+        <main class="flex-column flex-lg-row row mx-0 mx-lg-5">
+
+            <!-- main title -->
+            <div class="container-fluid my-5 mt-5">
+
+                <div class="row d-flex">
+
+                    <!-- svgimg -->
+                    <object data="Asset 1.svg" class="mt-5 col-12 col-lg-5 img-1 text-center " type=""
+                        width="1000px"></object>
+
+
+                    <!-- heading -->
+                    <Span class="col-12 col-lg-7 d-block text-center svg text-center mb-5 mt-5">
+                        <span class="h1 " style="font-size: 80px; font-weight: bold; color: #4c92ae;">Let the <span
+                                style="color: #20c997;">EARTH</span> Breathe</span>
+
+
+                        <!-- paragraph-one -->
+                        <p class="h3 svg mt-4 text-center"
+                            style="text-indent: 50px;font-family: 'Didact Gothic', sans-serif; color: #4c92ae;">
+                            Our planet is not on a good path to continue to sustain lives.The earth is facing the
+                            accelerating detrimental effects of climate changes. High temperature and intense weather
+                            are extremely increasing each year. Sea level is rising and getting warmer.
+                        </p>
+
+                        <!-- see more button -->
+                        <a href="#CAcard" style="text-decoration: none;">
+                            <button class="btn " id="seemore" style="background-color: #20c997;">
+                                <!-- see more -->
+                                <span class="h4 text-light svg">SEE MORE </span>
+
+                                <i class="fa-solid fa-angles-right h4 text-light svg"></i>
+                            </button></a>
+
+                    </Span>
+
+                </div>
+            </div>
+
+            <!-- first-container's first child -->
+            <div class="container-fluid my-5 mt-5">
+
+                <!-- row-one -->
+                <div class="row mt-5">
+
+                    <div class="col-12 col-lg-6" style="margin-top: 20px;">
+                        <span class="mt-5">
+
+                            <!-- heading -->
+                            <h1 class="h1 text-center mb-3 headline1"
+                                style="color: #4c92ae;font-size: 60px; font-weight: bold;">
+                                What is climate change?</h1>
+
+                            <!-- paragraph -->
+                            <p class="h4 mt-5 svg text-center"
+                                style="text-indent: 50px; color: #22bf90; font-family: 'Didact Gothic', sans-serif;">
+                                Climate change is defined as a long-term change in the Earth's overall temperature with
+                                massive and permanent ramification. Climate changes are almost entirely caused by human
+                                activities. Human activities from pollution to overpopulation are driving up the Earth's
+                                temperature and gradually harming the planet.
+                            </p>
+                        </span>
+                    </div>
+
+                    <!-- svgimg -->
+                    <object data="Asset 8.svg" type="" width="1000px" class="text-end col-12 col-lg-6  mt-5 img-2"
+                        id="links"></object>
+
+                </div>
+
+            </div>
+
+            <!--first-container's second-child cards-container -->
+            <div class="container-fluid row">
+
+                <!-- card-one -->
+                <div class="card col-lg col-12 card mx-3 my-4 contentcard">
+                    <div class="card-body ">
+                        <h5 class="card-title h3" style="color: #20c997;">Causes</h5>
+                        <object data="Asset 3.svg" type="" class="my-3"></object>
+                    </div>
+                    <div class="card-footer" style="background-color: white;">
+                        <a href="causes.html" class="btn text-light" style="background-color: #20c997; width: 100%;">See
+                            More</a>
+                    </div>
+                </div>
+
+                <!-- card-two -->
+                <div class="card col-lg col-12 card mx-3 my-4 contentcard">
+
+                    <div class="card-body ">
+                        <h5 class="card-title h3" style="color: #20c997;">Effects</h5>
+                        <object data="Asset 7.svg" type="" class="mt-4"></object>
+
+                    </div>
+                    <div class="card-footer" style="background-color: white;">
+                        <a href="effects.html" class="btn text-light"
+                            style="background-color: #20c997; width: 100%;">See
+                            More</a>
+                    </div>
+                </div>
+
+                <!-- card-three -->
+                <div class="card col-lg col-12 card mx-3 my-4 contentcard">
+
+                    <div class="card-body ">
+                        <h5 class="card-title h4" style="color: #20c997;">Actions</h5>
+                        <object data="Asset 4.svg" type="" class="my-5"></object>
+
+                    </div>
+                    <div class="card-footer" style="background-color: white;">
+                        <a href="action.html" class="btn text-light" style="background-color: #20c997; width: 100%;">See
+                            More</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+    </div>
+
+    <!-- second container -->
+    <div class="container-fluid">
+        <hr>
+        <div class="row">
+            <img src="img6.jpg" alt="" style="width: 700px; margin-left: auto; margin-right: auto;">
+        </div>
+
+        <div class="row mb-3">
+            <div class="col h1 text-center headline3" style="font-size: 80px; font-weight: bold; color: #20c997">CASE
+                <span style="color: #4c92ae;">STUDY</span>
+            </div>
+        </div>
+
+        <!-- first-paragraph -->
+        <div class="row">
+            <div class="col h5 mx-5 "
+                style="font-size: 20px; text-indent: 80px; text-align: justify; color: #20c997;font-family: 'Didact Gothic', sans-serif; ">
+                In recent years, the ecology has gradually lost its balance. In 2019, <span>Amazon rainforest fires
+                    burned
+                    more than <span style="color: #4c92ae;font-style :italic;">600 million trees,</span> </span>
+                an area equivalent to 40 Taipei cities. In 2020, the temperature record of 20 degrees Celsius in
+                Antarctica was measured for the
+                first time, which is equivalent to the temperature in autumn and winter in Taipei. Global warming has
+                caused the sea level to
+                rise, human beings are facing the threat of extreme climate, and the issue of climate change cannot be
+                delayed.
+            </div>
+        </div>
+
+        <!-- progress-bar -->
+        <div class="row ">
+            <div class="col mx-5 mt-2 pg">
+                <div class="progress mb-4 mt-2" style="height: 20px">
+                    <div class="progress-bar bg-danger w-25 text-light " style="font-weight: bold;">600 Million </div>
+                    <span class="progress-bar w-75" style="background-color:#20c997;"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- second-paragraph -->
+        <div class="row" id="CAcard">
+            <div class="col h5 mx-5 mb-5 "
+                style="font-size: 20px; text-indent: 80px; text-align: justify; color: #20c997;font-family: 'Didact Gothic', sans-serif; ">
+                Grand-tek technology stands with the earth and continues the low-carbon transformation. Choose suppliers
+                who are
+                environmentally friendly and willing to take carbon reduction actions. Change the way producers treat
+                the environment and
+
+                jointly maintain the ecological environment.
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+
+
+    <div class="container-fluid row">
+        <div class="col h1 text-center mb-5 mt-3" style="font-size: 40px; font-weight: bold; color: #20c997">Significant
+            Climate Anomalies and Events: <span style="color: #4c92ae;">February 2022</span></div>
+    </div>
+
+
+    <!-- third container -->
+    <!-- stats -->
+    <div class="container-fluid">
+        <h2 class="h4 ms-5 mb-4" style="color: #4c92ae;"><span><i class="fa-solid fa-temperature-full"></i></span>
+            Global Average
+            Temperature</h2>
+
+        <!-- first-row -->
+        <div class="row mx-5 ">
+
+            <!-- first-card -->
+            <div class="col-12 col-lg-3 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">NORTH AMERICA</h3>
+                        <span class="text-success"><i
+                                class="fa-solid fa-temperature-quarter me-1"></i>Cooler-than-average</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second-card -->
+            <div class="col-12 col-lg-3 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">SPAIN</h3>
+                        <span class="text-success"><i class="fa-solid fa-droplet-slash me-1"></i>Drier-than-average
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third-card -->
+            <div class="col-12 col-lg-3 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">ASIA</h3>
+                        <span class="text-success"><i
+                                class="fa-solid fa-temperature-arrow-up me-1"></i>Much-warmer-than-average</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fourth-card -->
+            <div class="col-12 col-lg-3 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">AFRICA</h3>
+                        <span class="text-success"><i
+                                class="fa-solid fa-temperature-full me-1"></i>warmer-than-average</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- second-row -->
+        <div class="row mx-5">
+            <!-- first-card -->
+            <div class="col-12 col-lg-6 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">ANTARCTIC SEA ICE EXTENT</h3>
+                        <span class="text-success"><i class="fa-solid fa-icicles me-2"></i>The Antarctic sea ice extent
+                            for February 2022 was 29.6% below average and the smallest February sea ice extent in the
+                            44-year record, surpassing teh now-second smallest February extent set in 2017</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second-card -->
+            <div class="col-12 col-lg-6 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">CYCLONE EMNATI</h3>
+                        <span class="text-success "><i class="fa-solid fa-hurricane me-2"></i>Emnati made landfall in
+                            Madagascar just a few days after Cyclone Batsirai and Tropical Storm Dumako. Emnati brought
+                            strong wind and heavy rain to the region. This was the first time since January 1988.</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- third-row -->
+        <div class="row mx-5 mb-5">
+
+            <!-- first-card -->
+            <div class="col-12 col-lg-3 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">EUROPE</h3>
+                        <span class="text-success"><i class="fa-solid fa-temperature-full me-2"></i>Europe had its
+                            seventh-warmest February on record.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second-card -->
+            <div class="col-12 col-lg-3 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">BRAZIL</h3>
+                        <span class="text-success"><i class="fa-solid fa-house-flood-water me-2"></i>Torrential rain
+                            fell in
+                            the city of Petropolis, causing deadly flash floods.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--third-card -->
+            <div class="col-12 col-lg-3 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">CONTIGUOUS U.S</h3>
+                        <span class="text-success"><i class="fa-solid fa-snowflake me-2"></i>A massive winter storm
+                            stretched from Texas to Maine, bringing heavy snow.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fourth-card -->
+            <div class="col-12 col-lg-3 tempcard contentcard1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title h4" style="color: #ff480bf4;">AUSTRALIA</h3>
+                        <span class="text-success"><i class="fa-solid fa-house-flood-water me-2"></i>Heavy rain at the
+                            end
+                            of the month, which
+                            caused extreme flooding.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    </main>
+
+
+    <div class="container mb-5">
+        <div class="d-lg-none d-inline ">
+            <a href="#nav" class=>
+                <button class="btn btn-success col-12 text-light">Go To Top</button>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="d-none d-lg-inline">
+
+        <div class="" style="height: 200px; background-color: rgba(168, 168, 168, 0.3);">
+            <div class="row">
+
+
+                <!-- start-col -->
+                <span class="col-4 h5 text-dark my-4 text-center">
+                    Explore
+                    <span class="list mt-3">
+                        <a href="main_page.html" style="text-decoration: none;">
+                            <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Home</div>
+                        </a>
+                        <a href="contact.html" style="text-decoration: none;">
+                            <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Contact</div>
+                        </a>
+                        <a href="aboutus.html" style="text-decoration: none;">
+                            <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">About</div>
+                        </a>
+                        <a href="#links" style="text-decoration: none;">
+                            <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Links</div>
+                        </a>
+                    </span>
+                </span>
+
+                <!-- center-col -->
+                <span class="col-4 h5 text-dark mt-4 text-center">
+                    <i class="fas fa-seedling"></i>
+                    Group 3
+                    <span class="list ">
+                        <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Sint Sint Linn Lae
+                        </div>
+                        <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Kyal Sin Lin Lint Aung
+                        </div>
+                        <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Hkaw Seng Grin</div>
+                        <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px">Min Kaung Htet</div>
+                    </span>
+
+                </span>
+
+                <!-- end-col -->
+                <span class="col-4 h5 text-dark my-4 text-center">
+                    Follow Us
+                    <span>
+                        <div class="list mt-2">
+                            <a href="https://www.youtube.com/" style="text-decoration: none;">
+                                <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px"><i
+                                        class="fa-brands fa-youtube"></i> Youtube</div>
+                            </a>
+                            <a href="https://www.facebook.com/" style="text-decoration: none;">
+                                <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px"><i
+                                        class="fa-brands fa-facebook"></i> Facebook</div>
+                            </a>
+                            <a href="https://www.instagram.com/" style="text-decoration: none;">
+                                <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px"><i
+                                        class="fa-brands fa-instagram"></i> Instagram</div>
+                            </a>
+                            <a href="https://discord.com/" style="text-decoration: none;">
+                                <div class=" list-group-item mt-2 text-black-50" style="font-size: 14px"><i
+                                        class="fa-brands fa-discord"></i> Discord</div>
+                            </a>
+
+                        </div>
+
+                    </span>
+                </span>
+
+                <!-- copyright -->
+                <div class="row h5 text-black-50">
+                    <span class="row-12 text-center mb-1 " style="font-size: 17px;">&copy;2022, All Right Reserve</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    </div>
+
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: '70px',
+            duration: 1500,
+            delay: 500
+
+        })
+        ScrollReveal().reveal('.headline1', { delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.headline2', { delay: 200, origin: 'top' });
+        ScrollReveal({ duration: 1700, }).reveal('.headline3', { delay: 200, scale: 0.9, origin: 'top' });
+        ScrollReveal().reveal('.img-1', { delay: 200, origin: 'top' });
+        ScrollReveal().reveal('.img-2', { delay: 200, origin: 'right' });
+        ScrollReveal().reveal('.contentcard1', { delay: 200, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.earth', {
+            rotate: {
+                x: 20,
+                z: 20
+            }
+        });
+    </script>
+
+</body>
+
+</html>
